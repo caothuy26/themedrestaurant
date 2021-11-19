@@ -1,26 +1,29 @@
-html{
-    max-height: 60%;
-    margin: 0%;
+.logo{
+    display: none;
 }
-body{
-    height: 165%;
-    margin: 0%;
-    background-image: url(../images/book.JPG);
-    background-position: center;
-    background-repeat: repeat-y;
-    background-size: cover;
+.box{
+    display: block;
+    padding-top: 10px;
 }
 header{
-    position:fixed;
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
 }
-.container{
-    font-family: monospace;
-    padding-top: 10%;
-    background-color: white;
-    margin-left: 10%;
-    margin-right: 5%;
-}  
+ul#main-menu{
+    flex-direction: column;
+    text-align: center;
+}
+#bar{
+    display: block;
+    overflow: auto;
+}
+nav{
+    display: none;
+}
+ul#main-menu a:hover{
+    background-color: honeydew;
+    transition: all;
+}
 #content h1{
     text-align: center;
 }
@@ -28,24 +31,9 @@ header{
     text-align: justify;
     font-size: 3vw;
 }
-.form{
-    margin-left: 0%;
-    font-size: 15px;
-    padding-top: 5px;
-}
 .form input{
     padding: 4px 9px;
-    width: 75%;
-}
-.form button{
-    width: 80%;
-    background-color:burlywood;
-    color: white;
-    padding: 10px 0px;
-    margin: 6px 0px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    font-size: 2vw;
 }
 .form textarea{
     width: 79%;
@@ -53,92 +41,4 @@ header{
 input[type = radio]{
     width: 4%;
 }
-ul{
-    list-style: none;
-    font-weight: bolder;
-}
-a{
-    text-decoration: none;
-}
-.myheader{
-    display: flex;
-    justify-content:space-evenly;
-    background-color: gold;
-}
-#bar{
-    display: none;
-    background-color: gold;
-    text-align: right;
-    padding: 10px;
-    cursor: pointer;
-}
-nav{
-    display: block
-}
-ul#main-menu{
-    display: flex;
-    padding: 10px;
-}
-ul#main-menu a{
-    text-transform: capitalize;
-    padding: 10px 20px;
-    color: black;
-    display: block;
-    font-size: 1.75vw;
-} 
-.box{
-    display: inline-block;
-}
-footer{
-    padding-top: 2%;
-    padding-bottom: 0.5%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1vw;
-}
-.myfooter{
-    display: block;
-    width: 100%;
-    position:relative;
-    bottom: 0;
-    background-color: gold;
-}
-#btt{
-    background: gold;
-    color: black;
-    width: 3vw;
-    height: 3vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 0.5%;
-    right: 0.5%;
-    border: black solid;
-    cursor: pointer;
-    z-index: 9999;
-}
-.contact{
-    position: fixed;
-    top: 30%;
-    z-index: 9999;
-    margin-left: 50%;
-}
-div.contact ul > li{
-    background-color: white;
-    border-radius: 50%;
-    width: 4vw;
-    height: 4vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 0.5vw;
-}
-div.contact ul > li:hover{
-    transform: scale(1.2);
-}
-div.contact ul > li a{
-    font-size: 2vw;
-    color: black;
-}
+

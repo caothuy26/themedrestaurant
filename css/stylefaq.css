@@ -74,6 +74,9 @@ ul#main-menu a{
     margin-bottom: 10px;
     cursor: pointer;
 }
+.accordion-header h3{
+    font-size: 1.5vw;
+}
 .accordion-item.active .accordion-header{
     background-color: gold;
     color: black;
