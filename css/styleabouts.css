@@ -3,15 +3,11 @@ html{
     margin: 0%;
 }
 header{
-    position:fixed;
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     right: 0;
-}
-.container{
-    margin: 0px auto;
-    max-width: 960px;
 }
 ul{
     list-style: none;
@@ -55,6 +51,9 @@ ul#main-menu a{
     display: block;
     font-size: 1.75vw;
 } 
+a:hover{
+    text-decoration: underline;
+}
 #banner {
     background: url(../images/banner.JPG);
     min-height: 480px;
@@ -63,59 +62,58 @@ ul#main-menu a{
     margin-right: auto;
     background-size: cover;
 }
-#content h1{
-    padding: 30px 0px;
+.container{
+    max-width: 960px;
+    margin: 0px auto;
+    align-content: center;
+}
+.container h1{
     text-align: center;
 }
-#content p{
-    font-size: 2vw;
-    text-align: justify;
+.my-tabs{
+    text-align: center;
 }
-.hinhanh img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.my-tabs p{
+    text-align: justify;
+    font-size: 20px;
+}
+.my-tabs img{
+    text-align: center;
     width: 60%;
-    z-index: 2;
+}
+.my-tabs h3{
+    margin-top: 0;
+    color: darkgrey;
+    font-size: 15px;
+}
+.tab-header{
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+    font-size: 20px;
+    border-bottom: 3px solid #ddd;
+}
+.tab-header li{
+    margin-right: 10px;
+}
+.tab-header li a{
+    display: block;
+    padding: 6px 10px;
+    text-decoration: none;
     position: relative;
 }
-.hinhanh h2{
-    display: block;
-    text-align: center;
-    font-size: 1vw;
-    color: darkgrey;
-}
-footer{
-    padding-top: 2%;
-    padding-bottom: 0.5%;
-    text-align: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 1vw;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.myfooter{
-    display: block;
-    width: 100%;
-    position:relative;
-    bottom: 0;
-    background-color: gold;
-}
-#btt{
+.tab-header li.active{
     background: gold;
-    color: black;
-    width: 3vw;
-    height: 3vw;
-    font-size: 2vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 0.5%;
-    right: 0.5%;
-    border: black solid;
-    cursor: pointer;
-    z-index: 9999;
+
+}
+.tab-header li:hover{
+    background: rgb(255, 230, 88);
+
+}
+.my-tabs{
+    padding: 20px 0px;
+
 }
 .contact{
     position: fixed;
@@ -139,4 +137,36 @@ div.contact ul > li:hover{
 div.contact ul > li a{
     font-size: 2vw;
     color: black;
+}
+#btt{
+    background: gold;
+    color: black;
+    width: 3vw;
+    height: 3vw;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0.5%;
+    right: 0.5%;
+    border: black solid;
+    cursor: pointer;
+    z-index: 9999;
+}
+footer{
+    padding-top: 2%;
+    padding-bottom: 0.5%;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.myfooter{
+    display: block;
+    width: 100%;
+    position:relative;
+    bottom: 0;
+    background-color: gold;
 }

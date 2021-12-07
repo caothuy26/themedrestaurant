@@ -24,13 +24,25 @@ ul#main-menu a:hover{
     background-color: honeydew;
     transition: all;
 }
-#banner{
-    background: url(../images/banner.JPG);
-    background-position: center center;
-    background-size: cover;
-}
 .container{
-    max-width: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-
-
+#content h1{
+    text-align: center;
+}
+#content p{
+    text-align: justify;
+    font-size: 3vw;
+}
+.form input{
+    padding: 4px 9px;
+    margin-bottom: 5px;
+    font-size: 2vw;
+}
+.form textarea{
+    width: 79%;
+}
+input[type = radio]{
+    width: 4%;
+}

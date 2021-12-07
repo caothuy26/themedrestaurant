@@ -24,6 +24,12 @@ ul#main-menu a:hover{
     background-color: honeydew;
     transition: all;
 }
+.container{
+    max-width: 90%;
+    margin-top: 12%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
 #content h1{
     text-align: center;
 }
