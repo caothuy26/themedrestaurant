@@ -38,13 +38,13 @@ ul#main-menu a:hover{
     font-size: 3vw;
 }
 .form input{
-    padding: 4px 9px;
+    padding: 4px 8px;
     font-size: 2vw;
 }
 .form textarea{
     width: 79%;
 }
 input[type = radio]{
-    width: 4%;
+    width: 10px;
 }
 

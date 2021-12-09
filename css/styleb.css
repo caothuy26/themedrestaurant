@@ -204,14 +204,16 @@ div.contact ul > li a{
 }
 
 .right-layout__sub-list--has-book {
-    display: none;
+    display: block;
 }
-
 
 .right-layout__sub-list.active {
     display: block;
 }
-
+.right-layout__closed{
+    right: 0;
+    position: absolute;
+}
 .right-layout__sub-item {
     display: flex;
     align-items: center ;
